@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sarah Sin</title>
+  <link rel="icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet" rel="stylesheet">
+  <style>
+  p {
+    text-align: center;
+    font-size: 3.5rem;
+    padding: auto;
+    font-family: Montserrat;
+  }
+
+  h6 {
+    text-align: left;
+    font-family: Montserrat;
+  }
+
+  hr {
+    border-style: dotted none none;
+    border-color: grey;
+    border-width: 5px;
+    width: 5%
+  }
+
+
+  .CapeTownCity {
+    float: left;
+    max-width: 600px;
+    padding: `10px;`
+  }
+
+  .JHBCity {
+    float: right;
+    max-width: 600px;
+    padding: 10px;
+
+
+  }
+
+  .Sarah {
+    text-decoration: underline;
+  }
+
+.Text{
+
+}
+
+  .Edit {
+    padding-top: 330px;
+  }
+
+  </style>
+
+</head>
+
+<body>
+
+  <p>Time left until <span class="Sarah">Sarah Sin</span> returns<p>
+
+  <hr />
+
+  <p id="demo"></p>
+
+  <hr/>
+
+  <img class="CapeTownCity" src = "https://lh3.googleusercontent.com/_rexLCJfZlTO_CJ8ajOuBcMk1eNLWLGyj9uizn47OgZNHwV1Ek62u2SNyjOASM4wzJ9bJqqQOcCFQo_fGl9dboCAbHtU8d2qBXINWl5IXxAKVk4OT--hW0e9VGw6gEdxHdXuO7aPYA" width="40%" height=50% />
+
+  <img class="JHBCity" src = "https://lh3.googleusercontent.com/GB8m5q5h7O1QadXu0-Q2waVbByqdO11Ut87eTY4CnYpi3LtyOwqL_x8JhKJGjowlS7TOiIJGqYofuDatCx42-S7Qqp5jJhCF082Tyu3GQOVOEaJ2wdXoQxGUx3RkO6kvfioGWh02uA" width="40%" height="50%" />
+
+  <h6 class="Edit">edited by Ryan Sin 2020</h6>
+
+  <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Oct 11, 2020 8:55:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Output the result in an element with id="demo"
+      document.getElementById("demo").innerHTML = days + " days " + hours + " hours " +
+        minutes + " minutes " + seconds + " seconds ";
+
+      // If the count down is over, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "Home Jerome!";
+      }
+    }, 1000);
+  </script>
+
+</body>
+
+</html>
